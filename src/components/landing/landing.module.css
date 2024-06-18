@@ -1,0 +1,98 @@
+/* General styles */
+
+  
+  /* Gradient border for images */
+  .gradient-border {
+    background: linear-gradient(45deg, #ff6ec4, #7873f5);
+    padding: 4px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .logo-image {
+    border-radius: 50%;
+  }
+  
+  /* Small screen styles */
+  @media (max-width: 640px) {
+    .landing-container {
+      height: auto;
+    }
+  
+    .background-wrapper {
+      
+    }
+  
+    .content-wrapper {
+        /* background-color: #7873f5; */
+
+      top: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+    }
+  
+    .info-section {
+      flex-direction: column;
+      /* background-color: #ff6ec4; */
+      gap: 5px;
+    }
+  
+    .text-content {
+      text-align: center;
+    }
+  
+    .title-section {
+      font-size: 2xl;
+      text-align: center;
+    }
+  
+    .subtitle {
+      font-size: lg;
+    }
+  
+    .description {
+      font-size: lg;
+      margin-top: 10px;
+    }
+  
+    .benefits-section {
+      margin-top: 20px;
+    }
+  
+    .pricing-section {
+      width: 100%;
+      margin-top: 20px;
+    }
+  
+    .pricing-wrapper {
+      width: 100%;
+      gap: 2px;
+    }
+  
+    .footer-section {
+      position: relative;
+      
+      padding: 20px;
+    }
+  
+    .footer-content {
+      flex-direction: row;
+      gap: 20px;
+      width: 100%;
+    }
+  
+    .footer-item {
+      width: auto;
+    }
+  
+    .image-wrapper {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .footer-title, .footer-subtitle {
+      font-size: small;
+    }
+  }
+  
