@@ -4,6 +4,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## DAMAC Harbour Lights Website
 
+## Deployed link
+https://damac-b1sr.vercel.app/
+
 This repository contains the source code for the DAMAC Harbour Lights website, a responsive Next.js application showcasing seafront apartments in Dubai Maritime City. The application features an interactive landing page, an amenities section, and various other features.
 
 ## Technologies
