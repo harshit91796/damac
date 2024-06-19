@@ -1,7 +1,4 @@
-/* General styles */
 
-  
-  /* Gradient border for images */
   .gradient-border {
     background: linear-gradient(45deg, #ff6ec4, #7873f5);
     padding: 4px;
@@ -13,14 +10,10 @@
     border-radius: 50%;
   }
   
-  /* Small screen styles */
+  /* Responsive styles */
   @media (max-width: 640px) {
     .landing-container {
       height: auto;
-    }
-  
-    .background-wrapper {
-      
     }
   
     .content-wrapper {

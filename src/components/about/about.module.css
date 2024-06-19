@@ -80,7 +80,7 @@
   text-align: center;
 }
 
-/* Small screen styles */
+/* Responsive styles */
 @media (max-width: 640px) {
   
   .tnc {
