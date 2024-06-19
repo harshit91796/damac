@@ -23,7 +23,7 @@ function Navbar() {
       {menuOpen && (
         <div className={styles["options-menu"]}>
           {[1, 2, 3, 4].map((i) => (
-            <div className="w-full flex flex-col">
+            <div key={i} className="w-full flex flex-col">
               <a href="#" className={`${styles["optionAnchor"]}`}>
                 Option {i}
               </a>
