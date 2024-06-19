@@ -7,7 +7,7 @@ import styles from "./landing.module.css";
 
 function Landing() {
   return (
-    <div className={`relative h-screen ${styles["landing-container"]}`}>
+    <div className={`relative h-screen ${styles["landing-container"]} `}>
     <div className={`bg-black relative z-0 h-screen w-full ${styles["background-wrapper"]}`}>
       <div className="absolute top-0 w-full h-full bg-gradient-to-r from-[#062349e7] via-[#06234981] to-[#06234988]"></div>
       <Image
@@ -67,7 +67,7 @@ function Landing() {
               </Button>
             </div>
           </div>
-          <div className="backdrop-blur-[100px] mt-1 p-1 w-[85%]">
+          <div className={`${styles["presentation-section"]} backdrop-blur-[100px] mt-1 p-1 w-[85%]`}>
             <h1 className="text-blue-200 p-1 text-sm">
               Get an Expert's Presentation of Real Estate in Dubai For Life
               And Investment
@@ -80,10 +80,10 @@ function Landing() {
     <div className={`absolute bottom-[-20%] w-full bg-[#cdd9e8] py-10 ${styles["footer-section"]}`}>
       <div className={`flex flex-wrap gap-10 justify-around mx-auto w-4/5 ${styles["footer-content"]}`}>
         {[
-          { logo: logo1, title: "BOOK WITH", subtitle: "ONLY 20%" },
-          { logo: logo2, title: "PAYMENT PLAN", subtitle: "EASY 70/30" },
-          { logo: logo3, title: "HANDOVER ON", subtitle: "Q2 2027" },
-          { logo: logo4, title: "AREA STARTS FROM", subtitle: "700 SQMT" },
+          { logo: logo4, title: "BOOK WITH", subtitle: "ONLY 20%" },
+          { logo: logo3, title: "PAYMENT PLAN", subtitle: "EASY 70/30" },
+          { logo: logo2, title: "HANDOVER ON", subtitle: "Q2 2027" },
+          { logo: logo1, title: "AREA STARTS FROM", subtitle: "700 SQMT" },
         ].map(({ logo, title, subtitle }, index) => (
           <div key={index} className={`flex flex-col items-center ${styles["footer-item"]}`}>
             <div className={`image-wrapper ${styles["gradient-border"]}`}>

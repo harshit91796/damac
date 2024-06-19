@@ -1,15 +1,44 @@
-import { Button } from '@mui/material'
-import React from 'react'
+'use client';
+
+import { Button } from '@mui/material';
+import React, { useState } from 'react';
+import styles from './navbar.module.css';
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
-    <div className='absolute z-20 top-0 w-screen flex justify-between p-10'>
-      <h1 className='text-4xl  text-white font-bold ml-[10%]'>DAMAC</h1>
-      <Button  className='mr-[10%]  '>
-        <h1 className='text-white border-2 border-blue-200 p-2 rounded-lg w-[150px]  hover:bg-blue-500 hover:text-white hover:duration-700 text-bold'>Enquires</h1>
+    <div className={styles.navbar}>
+      <h1 className={styles.brand}>DAMAC</h1>
+      <Button className={styles['enquires-button']}>
+        <h1>Enquires</h1>
       </Button>
+      <div className={styles['hamburger-menu']} onClick={toggleMenu}>
+        ☰
+      </div>
+      {menuOpen && (
+        <div className={styles['options-menu']}>
+    {     [1,2,3,4].map((i) => (
+          <div className='w-full flex flex-col'>
+          <a href="#" className={`${styles["optionAnchor"]}`}>Option {i}</a>
+          <div className='h-[1px] w-[145px] ml-[-10px] bg-white'></div>
+          </div>
+         
+         )
+         
+        )
+      
+      }
+
+      
+         </div>
+      )}
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

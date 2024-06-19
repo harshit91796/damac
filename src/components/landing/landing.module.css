@@ -44,7 +44,7 @@
   
     .title-section {
       font-size: 2xl;
-      text-align: center;
+      text-align: left;
     }
   
     .subtitle {
@@ -68,6 +68,10 @@
     .pricing-wrapper {
       width: 100%;
       gap: 2px;
+    }
+
+    .presentation-section {
+      width: 100%;
     }
   
     .footer-section {

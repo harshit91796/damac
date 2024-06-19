@@ -1,0 +1,34 @@
+.container{
+    position: absolute;
+        top: 230%;
+        background-color: antiquewhite;
+        
+    }
+  
+.grid1-layout{
+    
+}    
+
+
+  /* Responsive styles */
+  @media (max-width: 640px) {
+    
+
+    .grid-image {
+        object-fit: cover;
+        height: 200px; /* adjust as needed for smaller screens */
+      }
+
+    .container{
+      top: 171%;
+      height: 600px;
+    }
+    
+    .grid1-layout {
+        /* background-color: aquamarine; */
+        justify-content: center;
+        align-items: center;
+    }
+    
+  }
+  

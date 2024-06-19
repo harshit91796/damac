@@ -1,0 +1,133 @@
+.gradient-border {
+  background: linear-gradient(180deg, #7d7e7f3f, #ffffff);
+  padding: 5px;
+  border-radius: 100px;
+}
+
+/* Default logo image styles */
+.logo-image {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+/* Text colors */
+.text-blue-900 {
+  color: #1e3a8a;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+/* Additional styles */
+.about-container {
+  background-color: #f2f3ef;
+  height: 110vh;
+  width: 100vw;
+  position: absolute;
+  top: 120%;
+}
+
+.title-section {
+  text-align: center;
+  color: #1e3a8a;
+}
+
+.subtitle {
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  color: #1e3a8a;
+}
+
+.description {
+  font-size: 1rem;
+  text-align: center;
+  color: black;
+}
+
+.features-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 3px -2px rgba(0, 0, 0, 0.5);
+  width: calc(50% - 20px);
+  max-width: 250px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+:hover.feature-item {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  background-color: rgba(127, 174, 255, 0.304);
+
+}
+
+.feature-text {
+  color: #1e3a8a;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Small screen styles */
+@media (max-width: 640px) {
+  
+  .tnc {
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 100%;
+    margin-top: 2px;
+    text-align: center;
+  }
+
+  .logo-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+
+  .features-wrapper {
+    /* background-color: antiquewhite; */
+    margin: 0px;
+    padding: 10px;
+    width: 400px;
+  }
+
+  .about-container {
+    height: auto;
+    margin-top: -240px;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .title-section {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: small;
+  }
+
+  .description {
+    font-size: medium;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
