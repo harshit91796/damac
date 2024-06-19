@@ -23,7 +23,8 @@ function Landing() {
         <div className={`flex flex-col  text-white ${styles["text-content"]}`}>
           <div className={`text-4xl font-bold ${styles["title-section"]}`}>
             <h1>HARBOUR LIGHTS</h1>
-           
+            <h1>DE</h1>
+    <h1 className="text-blue-500">&nbsp;GRESOGONO</h1>
           </div>
 
           <h1 className={`text-xl font-bold mt-2 ${styles["description"]}`}>
